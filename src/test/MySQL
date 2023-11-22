@@ -1,0 +1,58 @@
+Microsoft  DB : SQL Server
+Oracle     DB : Oracle
+opensource DB : MySql
+Mongo
+DB2
+Google DB
+Amazon DB
+
+iddası : hızlı, güvenilir ve az yer kaplar.
+
+DB lerin ortak : SQL
+
+DB ye sorgu yapıyor, çıkan sonucu ekrana gönderiyor :
+
+
+Bilgilerden analiz yapanlar : Data Scientist : Bilgi Analizci
+
+DB yle uğraşan : DB Admin :
+
+DevSecOps     : Development Securty Operations
+InfraStructue : donanım altyapısını
+
+
+Bankalar : DB lerini
+
+
+
+
+DB  : bilgilerin tutulduğu program
+SQL : DB dili
+
+
+DB lerle uzaktan konuşmaya imkan veren programla vardır.
+bağlantı noktan: ip, adresin, DB nin olduğu makinanın adresi
+username
+password
+
+DataBase Management Sistem : DBMS
+Sql Server Management
+Oracle Management
+MySql Management : MySql WorkBench
+
+
+---------Tester ın DB ye nedne ihtiyacı var
+Loginden username password yazdın, doğru fakat login olamıyorsun
+country ekrandan kaydettin, gözükmüyor.
+gözükmemesinin sebebi ne:
+
+****************************************************
+
+MySQL Workbench i indir.
+Açılan pencerede + ya tıkla
+Açılan pencerede Hostname ile "Store in Vault" un içinde ki password'u gir.
+"Test Connection" a tıkla ve Successfully mesajını gör.
+OK dedikten sonra yeni bağlantımız başlamış oluyor.
+
+SCHEMAS larda ilgili DB ye sağ click yapıp "Set as Default Schema" tıkladığında text kalın punto olacak.
+ilgili tablo aktifleşmiş oldu, yani üzerinde çalışılabilir ve veri alınabilir.

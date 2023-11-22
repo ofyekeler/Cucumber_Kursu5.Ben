@@ -1,0 +1,137 @@
+Build System, "Intellij" değil "Maven" seçilecek !!!
+
+1- Yeni projeye tıklattım-> Proje Tipi olarak MAVEN
+   seçildi.standart sonlandırıldı.
+
+2- Klasör yapısını inceledik:
+   main -> Developer ın source kodları
+   test -> Testerın kodları
+
+3- Mavenın verdiği düzenli yapının kendi tarafımızda ,
+   bizde kendi düzenli klasör yapımızı oluşturacağız.
+   Klasörler ->  "Test -> Java" klasörünün altında açacağımız paketler
+
+   FeatureFiles   -> Senaryolarımızın olduğu klasör
+   StepDefinitions-> Senaryoların çalışan adımları - metodları burada olacak
+   Pages          -> Page Object Modell sayfalarımız POM (@FindBy)
+   Utilities      -> Driver ve diğer tekrar kullanılacak metodlarımız, sık kıllanılan araçlarımız
+   Runners        -> Çalıştırıcılar
+
+4- Ayarlar
+    A) Intellij Editör ayarları
+        1- Cucumber for Java
+        2- Gherkin Language  -> https://cucumber.io/docs/gherkin/reference/#keywords
+    B) POM.xml -> Project Object Model ayarları (Place Order la karıştırma)
+        Selenium
+        testNG
+        Cucumber
+        Cucumber-TestNG birleştirilen lib.
+
+******************************  30.03.2023  *******************************************
+
+İŞ ORTAMIMIZ:
+
+```
+Product owner - GMY
+Takım
+developerlar 4-5 kişi  dev-lead
+testerlar    4-5 kişi  test-lead
+takım yöneticisi - Scrum master
+
+yazılım mimarı -> development architect
+Business Analist -> BA - işi anlayıp bize anlatanlar
+
+Business User-> müşteri
+
+intertech (ülkemizdeki en büyük yazılım firması, denizbank ın kuruluşu, çok uluslu bir firma)
+                                        -> 1000 Kurtköy teknopark -> Banka yazılımları
+HCL Tech  -> bu da çok uluslu yabancı bir yazılım şirketi
+PO -> Kredilerin - ATM
+
+
+İlk işe girdiğinizde
+1 ay kadar oryantasyon
+Takım arkadaşlarınız size eğitim veriyor  (KT)
+2-3 ay sürüyor. Şirket bize yatırım yapıyor.
+
+Bilgisayar ORTAMLARI
+
+Dev Environment  Dev1 Dev2 Dev3
+Test Environment Test1 Test2 Test3 Test3 .. 14
+
+UAT Env -> testten BU test ediyor, kabul ederse
+
+PROD Env, Canlı ENV
+
+-> 1 günümüz
+   Sabahtan 7:30-8:00 çıktım
+   9-emaillerimi kontrol
+   9:15 Daily meet - günlük toplantı- dün ne yaptım, bugün ne yapacağım
+        blocker -
+   herkes işine döner
+
+
+-> sprint planlamasında başlıyor.
+   Backlog -> arkada bekleyen işler
+   BA BU dan alıyor, sürekli task açıp BackLog a ekliyor.
+   Sprint planlamada -> 10 günlük iş verilir 2 hafta
+
+   takım olarak Çarşamba günleri
+   BA,DEV,TEST,SM
+   SM -> DEV, Test
+
+   Sprint başladı ->
+   Dev taskımı bitirdim Test Env gönderiyor.
+   Tester Manuel testing -> fail
+
+   yeni task açıyor, (Defect Raise)
+   1-Şu kullanıcı ve şifre ile girdim
+   2-Şu adımları yaptım
+   3-Şu olması gerekiyordu ama bu oldu(Assert)
+   4-Manuel ScreenShot alıp ekliyoruz.(evidence)
+
+   bende çalışıyor, onda çalışmadı-> quick call
+   anlamadınız mı -> Scrum Master çözüm
+
+   maneul testing geçene bu döner
+
+   Manuel testing geçtiğin anda, Automation testi çalıştırır ve ana
+   test eklersin.
+
+   UAT ye atılır, BU email atılır ,şu kulanıcı ile şu taskı test
+   edip onaylarmısınız.
+
+   BU onaylarsa
+
+   Relase gününde PROD atılır.
+   Test lead-dev Lead-BA-BU bulunur.
+
+   sprint review -> dev hem tester , yapılan bütün takıma anlatılıyor.
+
+   PROD a atılınca BU kontrol eder. tamamsa , kutlama
+   fail olur ise yas,-> eski versiyona geri dönülüyor
+   biz bu hatayı niye yakalayamadık.
+
+   sprint son aşaması sprint bittikten sonra
+   sprint retrospective toplantısı yapılıyor
+   neleri yapmaya devam etmeliyiz
+   neleri de yapmayı bırakmalıyız.
+   neleri daha fazla yapmalıyız.
+   neleri durdursak daha iyi olur
+
+   ****************04.04.2023**********************
+   1- Web Testing
+      Selenium
+      TestNG
+      Cucumber
+
+   2- DB Testing
+      MySql Workbench -> Manuel Testing 6-8
+      JDBC lib  automation  2-3
+
+   3- API Testing
+      Postman -> Manuel Testing  3-4
+      RestAssured lib -> automation  6-7
+
+   4- Jenkins programları  2-3
+      ototmatik çalıştıracak
